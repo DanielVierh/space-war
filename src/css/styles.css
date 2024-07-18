@@ -1,0 +1,37 @@
+body {
+  background-color: black;
+}
+
+#bdy {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+#spaceship {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  z-index: 3;
+  transition: all 2s ease;
+  border-radius: 50%;
+  animation: pulsar 2s linear infinite;
+}
+#spaceship.selected {
+  border: 3px solid lightblue;
+  box-shadow: 0 0 20px lightblue;
+}
+
+@keyframes pulsar {
+  0% {
+    outline: 20px solid rgba(255, 0, 0, 0.4);
+  }
+  50% {
+    outline: 80px solid rgba(255, 0, 0, 0.4);
+  }
+  100% {
+    outline: 20px solid rgba(255, 0, 0, 0.4);
+  }
+}/*# sourceMappingURL=styles.css.map */
