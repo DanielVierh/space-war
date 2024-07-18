@@ -1,5 +1,5 @@
 const spaceship = document.getElementById('spaceship');
-const canvas = document.getElementById('bdy');
+const space = document.getElementById('space');
 
 let spaceShipIsSelected = false;
 
@@ -15,7 +15,7 @@ spaceship.style.top = `${600 - spaceship_height}px`
 
 
 
-canvas.addEventListener('click', (e)=> {
+space.addEventListener('click', (e)=> {
 
     mouse.x = e.clientX
     mouse.y = e.clientY
