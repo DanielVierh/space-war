@@ -16,8 +16,7 @@ spaceship.style.top = `${600 - spaceship_height}px`
 
 
 canvas.addEventListener('click', (e)=> {
-    console.log('canvas');
-    console.log('spaceShipIsSelected', spaceShipIsSelected);
+
     mouse.x = e.clientX
     mouse.y = e.clientY
 
@@ -33,7 +32,7 @@ canvas.addEventListener('click', (e)=> {
 })
 
 spaceship.addEventListener('click', ()=> {
-    console.log('Spceship');
+
     spaceShipIsSelected = true;
     spaceship.classList.add('selected');
 
